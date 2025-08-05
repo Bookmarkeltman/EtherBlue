@@ -61,3 +61,23 @@ nav ul li a:hover {
   color: #e0e0e0;
   text-align: center;
 }
+
+#profile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #232e3a;
+  border: 3px solid #0c71e0;
+}
+
+#user-name {
+  font-size: 1.4em;
+  color: #0c71e0;
+}
