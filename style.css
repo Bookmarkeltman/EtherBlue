@@ -1,4 +1,3 @@
-/* Minimalistic black and dark blue theme */
 body {
   background: #10151c;
   color: #e0e0e0;
@@ -32,6 +31,7 @@ button {
   margin: 8px;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1em;
 }
 
 nav ul {
@@ -79,5 +79,43 @@ nav ul li a:hover {
 
 #user-name {
   font-size: 1.4em;
+  color: #0c71e0;
+}
+
+/* Modal styles for settings */
+.modal {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(10, 14, 20, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #192030;
+  color: #e0e0e0;
+  padding: 32px;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 2em;
+  cursor: pointer;
   color: #0c71e0;
 }
