@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Ether Blue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="side-menu" class="hidden">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+    <button onclick="toggleMenu()">Hide Menu</button>
+  </aside>
+  <button onclick="toggleMenu()">Show Menu</button>
+  <main>
+    <h1>Welcome to Your Dashboard</h1>
+    <div id="profile">
+      <img id="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
+      <h2 id="user-name">Your Name</h2>
+    </div>
+    <button onclick="openSettings()">Account Settings</button>
+    <button onclick="deleteAccount()">Delete Account</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
