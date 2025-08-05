@@ -53,15 +53,7 @@ nav ul li a:hover {
   color: #1a97f5;
 }
 
-.google-signin, .google-signup {
-  margin-top: 32px;
-  background: #10151c;
-  border: 1px solid #232e3a;
-  padding: 20px;
-  color: #e0e0e0;
-  text-align: center;
-}
-
+/* Profile section */
 #profile {
   display: flex;
   align-items: center;
@@ -82,7 +74,77 @@ nav ul li a:hover {
   color: #0c71e0;
 }
 
-/* Modal styles for settings */
+.username-box {
+  background: #232e3a;
+  color: #0c71e0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Friends list */
+#friends-section {
+  margin-top: 36px;
+}
+
+#friends-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.friend-card {
+  background: #192030;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friend-pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #232e3a;
+  border: 2px solid #0c71e0;
+  margin-bottom: 8px;
+}
+
+.friend-username {
+  font-weight: bold;
+  color: #1a97f5;
+  margin-bottom: 5px;
+}
+
+.friend-email {
+  font-size: 0.95em;
+  color: #8ec8ff;
+  margin-bottom: 10px;
+}
+
+.friend-actions button {
+  background: #232e3a;
+  color: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 6px 14px;
+  font-size: 0.95em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #232e3a;
+  margin: 32px 0;
+}
+
+/* Modal styles for settings and chat */
 .modal {
   position: fixed;
   z-index: 200;
@@ -118,4 +180,19 @@ nav ul li a:hover {
   font-size: 2em;
   cursor: pointer;
   color: #0c71e0;
+}
+
+/* Chat messages */
+#messages {
+  max-height: 220px;
+  min-height: 80px;
+  overflow-y: auto;
+  background: #232e3a;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+#messages p {
+  margin: 6px 0;
+  font-size: 1em;
 }
