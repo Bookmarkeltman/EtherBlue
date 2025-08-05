@@ -22,11 +22,17 @@
     <div id="profile">
       <img id="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
       <h2 id="user-name">Your Name</h2>
-      <p id="user-email"></p>
     </div>
     <button onclick="openSettings()">Account Settings</button>
     <button onclick="deleteAccount()">Delete Account</button>
   </main>
+  <div id="settings-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeSettings()">&times;</span>
+      <h2>Account Settings</h2>
+      <p>Feature coming soon...</p>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
