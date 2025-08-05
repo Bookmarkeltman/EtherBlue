@@ -21,18 +21,46 @@
     <h1>Welcome to Your Dashboard</h1>
     <div id="profile">
       <img id="profile-pic" src="https://via.placeholder.com/100" alt="Profile Picture">
-      <h2 id="user-name">Your Name</h2>
+      <div>
+        <h2 id="user-name">Your Name</h2>
+        <div id="user-username" class="username-box">@username</div>
+        <button onclick="openSettings()">Account Settings</button>
+        <button onclick="deleteAccount()">Delete Account</button>
+      </div>
     </div>
-    <button onclick="openSettings()">Account Settings</button>
-    <button onclick="deleteAccount()">Delete Account</button>
+    <hr>
+    <section id="friends-section">
+      <h2>Your Friends</h2>
+      <div id="add-friend">
+        <input type="text" id="contact-username" placeholder="Add friend by username" />
+        <button onclick="addContact()">Add Friend</button>
+        <div id="add-contact-error" style="color:#f77;margin-top:10px;"></div>
+      </div>
+      <div id="friends-list">
+        <!-- Friend cards will go here -->
+      </div>
+    </section>
+    <div id="chat-section" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeChat()">&times;</span>
+        <h2>Chat with <span id="chat-with"></span></h2>
+        <div id="messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <div id="settings-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeSettings()">&times;</span>
+        <h2>Account Settings</h2>
+        <label for="username-input">Your Username:</label>
+        <input type="text" id="username-input" placeholder="Add username" />
+        <button onclick="saveUsername()">Save Username</button>
+        <div id="username-error" style="color:#f77;margin-top:10px;"></div>
+        <p style="margin-top:20px;">Feature: Change username (unique), required for friends & messaging.</p>
+      </div>
+    </div>
   </main>
-  <div id="settings-modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close" onclick="closeSettings()">&times;</span>
-      <h2>Account Settings</h2>
-      <p>Feature coming soon...</p>
-    </div>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
